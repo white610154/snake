@@ -30,11 +30,11 @@ type Snake struct {
 // NewSnake create a new snake when game start
 func NewSnake() *Snake {
 	body := []Point{
-		Point{fieldWidth / 2, fieldHeight / 2},
-		Point{fieldWidth / 2, fieldHeight/2 + 1},
-		Point{fieldWidth / 2, fieldHeight/2 + 2},
-		Point{fieldWidth / 2, fieldHeight/2 + 3},
-		Point{fieldWidth / 2, fieldHeight/2 + 4},
+		{fieldWidth / 2, fieldHeight / 2},
+		{fieldWidth / 2, fieldHeight/2 + 1},
+		{fieldWidth / 2, fieldHeight/2 + 2},
+		{fieldWidth / 2, fieldHeight/2 + 3},
+		{fieldWidth / 2, fieldHeight/2 + 4},
 	}
 	s := &Snake{5, body, dirUp, startSpeed, fullDuration}
 	return s
